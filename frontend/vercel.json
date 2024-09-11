@@ -1,10 +1,6 @@
 {
     "rewrites": [
         {
-            "source": "/api/(.*)",
-            "destination": "https://rest-api-snowy.vercel.app"
-        },
-        {
             "source": "/api/users/(.*)",
             "destination": "https://rest-api-snowy.vercel.app"
         }
