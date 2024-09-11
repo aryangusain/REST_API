@@ -8,5 +8,15 @@
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/" }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "https://rest-api-snowy.vercel.app"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
   }
