@@ -18,6 +18,9 @@ mongoose.connect(MONGODB_URI, {dbName: 'REST_api'})
 
 
 /****************************** ROUTES *****************************/
+app.get('/', (req, res) => {
+    res.send('Server is Running');
+})
 
 //Get all Users
 app.get('/api/users', async (req, res) => { 
