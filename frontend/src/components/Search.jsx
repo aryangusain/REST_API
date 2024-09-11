@@ -15,6 +15,7 @@ function Search() {
     .then((response) => {
       if(response.data === "User does not exist!") {
         setMessage(response.data);
+        setUser("");
       }
       else {
         setUser(response.data);
