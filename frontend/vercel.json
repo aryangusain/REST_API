@@ -1,8 +1,10 @@
 {
+    "version": 2,
     "rewrites": [
-        {
-            "source": "/api/users/(.*)",
-            "destination": "https://rest-api-snowy.vercel.app"
-        }
+      {
+        "source": "/api/(.*)",
+        "destination": "https://your-backend-url.com/api/$1"
+      }
     ]
-}
+  }
+  
